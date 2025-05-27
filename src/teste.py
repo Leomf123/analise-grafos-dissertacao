@@ -68,10 +68,10 @@ def teste(indice_inicio, indice_fim, datasets, K, Adjacencia, Ponderacao, Quanti
 
                     simetrica, conectado, positivo = checar_matrix_adjacencias(matriz_pesos)
 
-                    nArestas, grauMedio, grauMaximo, grauMinimo, verticesIsolados, diametro, coefClustering = metricasGrafo(matriz_pesos)
+                    nArestas, grauMedio, grauMaximo, grauMinimo, verticesIsolados, diametro, coefClustering, densidade = metricasGrafo(matriz_pesos)
 
                     # gravar resultado em uma linha usando pandas
-                    gravar_resultados(indice_fim, test_ID, nome_dataset, k, adjacencia, ponderacao, nArestas, grauMedio, grauMaximo, grauMinimo, verticesIsolados, diametro, coefClustering)
+                    gravar_resultados(indice_fim, test_ID, nome_dataset, k, adjacencia, ponderacao, nArestas, grauMedio, grauMaximo, grauMinimo, verticesIsolados, diametro, coefClustering, densidade)
 
                     #print("test_ID: ", test_ID)
 

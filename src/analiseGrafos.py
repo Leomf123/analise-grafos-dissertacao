@@ -21,4 +21,6 @@ def metricasGrafo(matriz_pesos):
 
     coefClustering = g.transitivity_undirected()
 
-    return nArestas, grauMedio, grauMaximo, grauMinimo, verticesIsolados, diametro, coefClustering
+    densidade = g.density()
+
+    return nArestas, grauMedio, grauMaximo, grauMinimo, verticesIsolados, diametro, coefClustering, densidade
